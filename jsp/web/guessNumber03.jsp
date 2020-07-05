@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<a href="guessNumber01.jsp">返回继续玩</a>
+<a href="guessNumber01.jsp">返回继续玩！</a>
 </body>
 </html>
