@@ -8,7 +8,9 @@ p{
     text-align: center;
     font-family: "Courier New";
 }
-
+body{
+    background-color: aqua;
+}
     </style>
 </head>
 <body>
