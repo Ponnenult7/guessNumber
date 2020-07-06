@@ -8,38 +8,48 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>小游戏</title>
-<style>
-    body{
-        background-color: #cccccc;
-    }
-    h2{
-        padding-left: 550px;
-        text-align:left;
-        color: aliceblue;
-    }
+    <title >小游戏</title>
+    <style>
 
-    p{
-        display: block;
-        text-align: center;
+        body{
+            background-color: #cccccc;
+        }
+        h2{
+            text-align: center;
 
-    }
-    div{
-        color: lightseagreen ;
-    }
-</style>
+            color: aliceblue;
+        }
+        p{
+            display: block;
+            text-align: center;
+        }
+        div{
+            color: lightseagreen ;
+            text-align: center;
+        }
+
+
+    </style>
 </head>
 <body>
 
-<h2 >Let's guess number !</h2><br>
-<p>系统会随机生成一个1-100之间的整数 你有五次机会去猜出它</p><br>
+<h2 >          猜数字</h2>
+<hr/>
+        <p>游戏规则</p>
 
-<form action="guessNumber02.jsp" method="post">
-    <div>
-        <p ><input type="submit" value="开始游戏吧！"></p>
-    </div>
+        <p>系统将会随机生成一个1-100之间的整数</p>
+        <p>您将会有十次机会去将这个数猜测出来</p>
+        <p>猜测之后会提示所猜数字是大了,小了或猜对了</p>
+        <p>若在机会用完之前正确猜出则您获得胜利</p>
+        <p>若十次机会用完仍未猜对,则游戏失败</p>
 
-</form>
+        <form action="guessNumber02.jsp" method="post">
+            <br>
+             <div>
+                 <input type="submit" value="Enter the game！" class="button">
+             </div>
+        </form>
+
 
 <%
     int a=(int)(Math.random()*100+1);

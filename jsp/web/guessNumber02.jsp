@@ -14,9 +14,10 @@ p{
 <body>
 
 <h2 align="center">请输入1-100之间的数</h2>
+
 <form  method="post">
     <p><input type="text" name="guess" id="g"/></p><br>
-    <p><input type="submit" value="提交" onclick="ale()"/></p>
+    <p><input type="submit" value="submit" onclick="ale()"/></p>
 </form>
 
 <%
@@ -30,6 +31,7 @@ p{
     num1=Integer.valueOf(str1);
     n=Integer.valueOf(n1);
 %>
+
 <script type="text/javascript" >
     var num1='<%=session.getAttribute("number")%>' ;
     var n='<%=n+1%>';
@@ -37,7 +39,7 @@ p{
         var num2=document.getElementById("g").value;
         if(num1==num2){
             alert("猜对了！您一共猜了"+ n +"次");
-            window.location.href='index.jsp';
+            window.location.href='guessNumber03.jsp';
             window.event.returnValue=false;
         }
         else if(num1>num2){

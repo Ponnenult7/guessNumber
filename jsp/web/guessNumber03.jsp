@@ -8,9 +8,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Transform</title>
 </head>
+
 <body>
-<a href="guessNumber01.jsp">返回继续玩！</a>
+<a href="guessNumber01.jsp">
+    <input name="Play again!" text="button" id="button" value="Play again!">
+</a>
+
+
+
+
 </body>
 </html>
