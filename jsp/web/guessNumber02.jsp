@@ -18,7 +18,7 @@ body{
 <h2 align="center">请输入1-100之间的数</h2>
 
 <form  method="post">
-    <p><input type="text" name="guess" id="g"/></p><br>
+    <p><input type="number" name="guess" id="g" max="100" min="1"/></p><br>
     <p><input type="submit" value="submit" onclick="ale()"/></p>
 </form>
 
@@ -52,7 +52,7 @@ body{
         }
         if(n==10){
             alert("游戏结束！")
-            window.location.href='guessNumber01.jsp';
+            window.location.href='index.jsp';
             window.event.returnValue=false;
         }
     }

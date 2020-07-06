@@ -11,7 +11,7 @@
     <title>Transform</title>
 </head>
 <body>
-<a href="guessNumber01.jsp">
+<a href="index.jsp">
     <input name="Play again!" text="button" id="button" value="Play again!">
 </a>
 
